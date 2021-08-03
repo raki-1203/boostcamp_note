@@ -18,4 +18,25 @@ pythonic code 는 앞서 우리가 살펴보았던 데이터 구조와 달리 �
 
 반드시 필요한 asterisk 의 활용에 대해서 배우도록 하겠습니다.
 
-## 1. 
+## 1. Split & join
+
+### 1.1 Split
+- string type의 값을 "기준값"으로 나눠서 List 형태로 변환
+
+### 1.2 join
+- "기준값"으로 List의 값을 하나로 합침
+
+## 2. list comprehension
+
+- 기존 List 사용하여 간단히 다른 List를 만드는 기법
+- 포괄적인 List, 포함되는 리스트라는 의미로 사용됨
+- 파이썬에서 가장 많이 사용되는 기법 중 하나
+- 일반적으로 for + append 보다 속도가 빠름
+
+## 3. Enumerate & Zip
+
+### 3.1 enumerate
+
+- list의 element를 추출할 때 번호를 붙여서 추출
+
+

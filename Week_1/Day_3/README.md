@@ -1,4 +1,4 @@
-[Day3] 파이썬 6 ~ 7강 & AI math 1 ~ 3강
+[Day3] 파이썬 6 ~ 7강 & AI math 1 ~ 4강
 
 * numpy에 대한 개념과 이해
 * pandas에 대한 개념과 이해

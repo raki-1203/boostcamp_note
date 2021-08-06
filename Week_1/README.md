@@ -1,4 +1,4 @@
-# [Week1] Python Basics For AI - 최성철 교수님
+# [Week1] Python Basics For AI - 최성철 교수님 & AI Math - 임성빈 교수님
 
 ### [[Day1] Python 1~2강 & 필수과제 1, 2, 3](https://github.com/raki-1203/boostcamp_note/tree/main/Week_1/Day_1)
 
@@ -44,3 +44,5 @@
 - [마스터클래스] 임성빈 교수님
 - [멘토] 김준태멘토님
 - [선택과제 3] Maximum Likelihood Estimation
+
+### [[Day5] AI math 9 ~ 10강 & 선택과제 2]()

@@ -15,3 +15,11 @@
 - Bar Plot 사용하기
 - [도메인특강 CV, NLP] - 서대원, 박선규
 - [마스터클래스] - 안수빈 강사
+
+### [[Day8] DL Basic 4~6강 & 시각화 2-2강 & 필수과제 CNN Assignment](https://github.com/raki-1203/boostcamp_note/tree/main/Week_2/Day_8)
+
+- Convolution은 무엇인가?
+- Modern CNN - 1x1 convolution의 중요성
+- Computer Vision Application
+- Line Plot 사용하기
+- [github 특강1] - 이고잉 강사

@@ -23,3 +23,9 @@
 - Computer Vision Application
 - Line Plot 사용하기
 - [github 특강1] - 이고잉 강사
+
+### [[Day9] DL Basic 7~8강 & 필수과제 LSTM Assignment & Multi-headed Attention](https://github.com/raki-1203/boostcamp_note/tree/main/Week_2/Day_9)
+
+- Sequential Models - RNN
+- Sequential Models - Transformer
+- [github 특강2] - 이고잉 강사

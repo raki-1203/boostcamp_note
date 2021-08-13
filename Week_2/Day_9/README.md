@@ -1,4 +1,4 @@
-# [Day9] DL Basic 7~8강 & 시각화 2-3강 & 필수과제 LSTM Assignment & Multi-headed Attention Assignment
+# [Day9] DL Basic 7~8강 & 필수과제 LSTM Assignment & Multi-headed Attention Assignment
 
 * Sequential Model 대한 이해
   * RNN

@@ -1,4 +1,4 @@
-# [Week1] DL Basic - 최성준 마스터 & [Special] Data Viz - 안수빈 마스터
+# [Week1] DL Basic - 최성준 교수님 & [Special] Data Viz - 안수빈 강사
 
 ### [[Day6] DL Basic 1 ~ 2강 & 시각화 1-1 ~ 1-3강 & 필수과제 MLP_Assignment](https://github.com/raki-1203/boostcamp_note/tree/main/Week_2/Day_6)
 
@@ -29,3 +29,11 @@
 - Sequential Models - RNN
 - Sequential Models - Transformer
 - [github 특강2] - 이고잉 강사
+- [오피스아워(선택과제해설)] - 이주용, 이하경, 류영표 멘토
+
+### [[Day10] DL Basic 9~10강 & 시각화 2-3강](https://github.com/raki-1203/boostcamp_note/tree/main/Week_2/Day_10)
+
+- Generative Models 1
+- Generative Models 2
+- Scatter Plot 사용하기
+- [마스터클래스] - 최성준 교수님

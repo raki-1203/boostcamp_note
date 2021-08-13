@@ -15,3 +15,11 @@
 - [Day3] 파이썬 6 ~ 7강 & AI math 1 ~ 4강 & 선택과제 1]
 - [Day4] AI math 5 ~ 8강 & 선택과제 3
 - [Day5] AI math 9 ~ 10강 & 선택과제 2
+
+### [[Week1] DL Basic - 최성준 교수님 & [Special] Data Viz - 안수빈 강사](https://github.com/raki-1203/boostcamp_note/tree/main/Week_2)
+
+- [Day6] DL Basic 1 ~ 2강 & 시각화 1-1 ~ 1-3강 & 필수과제 MLP_Assignment
+- [Day7] DL Basic 3강 & 시각화 2-1강 & 필수과제 Optimization_Assignment
+- [Day8] DL Basic 4~6강 & 시각화 2-2강 & 필수과제 CNN Assignment
+- [Day9] DL Basic 7~8강 & 필수과제 LSTM Assignment & Multi-headed Attention
+- [Day10] DL Basic 9~10강 & 시각화 2-3강

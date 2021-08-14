@@ -16,7 +16,7 @@
 - [Day4] AI math 5 ~ 8강 & 선택과제 3
 - [Day5] AI math 9 ~ 10강 & 선택과제 2
 
-### [[Week1] DL Basic - 최성준 교수님 & [Special] Data Viz - 안수빈 강사](https://github.com/raki-1203/boostcamp_note/tree/main/Week_2)
+### [[Week2] DL Basic - 최성준 교수님 & [Special] Data Viz - 안수빈 강사](https://github.com/raki-1203/boostcamp_note/tree/main/Week_2)
 
 - [Day6] DL Basic 1 ~ 2강 & 시각화 1-1 ~ 1-3강 & 필수과제 MLP_Assignment
 - [Day7] DL Basic 3강 & 시각화 2-1강 & 필수과제 Optimization_Assignment

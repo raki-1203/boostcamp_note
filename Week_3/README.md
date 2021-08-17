@@ -5,5 +5,5 @@
 - Introduction to PyTorch
 - PyTorch Basics
 - PyTorch 프로젝트 구조 이해하기
-- [필수과제] Custom Model 개발하기
+- [필수과제] Custom Model 개발하기 - hook 까지 진행
 

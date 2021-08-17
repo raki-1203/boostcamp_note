@@ -1,4 +1,4 @@
-# [Week1] DL Basic - 최성준 교수님 & [Special] Data Viz - 안수빈 강사
+# [Week2] DL Basic - 최성준 교수님 & [Special] Data Viz - 안수빈 강사
 
 ### [[Day6] DL Basic 1 ~ 2강 & 시각화 1-1 ~ 1-3강 & 필수과제 MLP_Assignment](https://github.com/raki-1203/boostcamp_note/tree/main/Week_2/Day_6)
 

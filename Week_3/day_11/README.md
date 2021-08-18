@@ -1,4 +1,4 @@
-# [Day11] PyTOrch 1~3강
+# [Day11] PyTorch 1~3강
 
 * 딥레닝 프레임워크에 대한 이해
   * PyTorch vs TensorFlow

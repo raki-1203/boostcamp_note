@@ -12,3 +12,11 @@
 - AutoGrad & Optimizer
 - Dataset & Dataloader
 - [필수과제] Custom Dataset 과제
+
+### [[Day13] PyTorch 기본 6 ~ 7강 & 시각화 3-1 ~ 3-2강 & 선택과제 Transfer Learning + Parameter Tuning](https://github.com/raki-1203/boostcamp_note/tree/main/Week_3/Day_13)
+
+- 모델 불러오기
+- Monitoring tools for PyTorch
+- Text 사용하기
+- Color 사용하기
+- [선택과제] Transfer Learning + Parameter Tuning

@@ -1,4 +1,4 @@
-# [Week3] DL Basic - 최성철 교수님 & [Special] Data Viz - 안수빈 강사
+# [Week3] PyTorch 기본 - 최성철 교수님 & [Special] Data Viz - 안수빈 강사
 
 ### [[Day11] PyTorch 기본 1 ~ 3강 & 필수과제 Custom Model 개발하기](https://github.com/raki-1203/boostcamp_note/tree/main/Week_3/Day_11)
 
@@ -20,3 +20,11 @@
 - Text 사용하기
 - Color 사용하기
 - [선택과제] Transfer Learning + Parameter Tuning
+
+### [[Day14] PyTorch 기본 8 ~ 10강 & 시각화 3-3 ~ 3-4강](https://github.com/raki-1203/boostcamp_note/tree/main/Week_3/Day_14)
+
+- Multi-GPU 학습
+- Hyperparameter Tuning
+- Pytorch Troubleshooting
+- Facet 사용하기
+- More Tips

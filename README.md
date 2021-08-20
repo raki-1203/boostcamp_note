@@ -23,3 +23,10 @@
 - [Day8] DL Basic 4~6강 & 시각화 2-2강 & 필수과제 CNN Assignment
 - [Day9] DL Basic 7~8강 & 필수과제 LSTM Assignment & Multi-headed Attention
 - [Day10] DL Basic 9~10강 & 시각화 2-3강
+
+### [[Week3] PyTorch 기본 - 최성철 교수님 & [Special] Data Viz - 안수빈 강사](https://github.com/raki-1203/boostcamp_note/tree/main/Week_3)
+
+- [Day11] PyTorch 기본 1 ~ 3강 & 필수과제 Custom Model 개발하기
+- [Day12] PyTorch 기본 4 ~ 5강 & 필수과제 Custom Dataset 과제
+- [Day13] PyTorch 기본 6 ~ 7강 & 시각화 3-1 ~ 3-2강 & 선택과제 Transfer Learning + Parameter Tuning
+- [Day14] PyTorch 기본 8 ~ 10강 & 시각화 3-3 ~ 3-4강

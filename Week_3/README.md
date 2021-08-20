@@ -29,6 +29,8 @@
 - Facet 사용하기
 - More Tips
 
+### [Week3 피어세션 정리](https://github.com/raki-1203/Boostcamp_2st_Hot6/tree/main/Meetup-log/week3)
+
 ---
 ### 학습회고
 

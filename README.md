@@ -1,12 +1,16 @@
 # BoostCamp AI Tech
 
 ## Abstract
-- Ustage : 2021.08.02 ~
+- Ustage
+  - 2021.08.02 ~ 2021.08.20
+- Pstage
+  - 2021.08.23 ~ 2021.09.03
+
+- BoostCamp AI Tech의 Edwith 강의 내용을 바탕으로 `markdown`으로 작성되었습니다.
+- 이 Github의 form은 [여기](https://github.com/ydy8989/boostcamp)를 참고했습니다.
 
 ## U Stage
 - 1~3주차 강의
-- BoostCamp AI Tech의 Edwith 강의 내용을 바탕으로 `markdown`으로 작성되었습니다.
-- 이 Github의 form은 [여기](https://github.com/ydy8989/boostcamp)를 참고했습니다.
 
 ### [[Week1] Python Basics For AI - 최성철 교수님 & AI Math - 임성빈 교수님](https://github.com/raki-1203/boostcamp_note/tree/main/Week_1)
 
@@ -30,3 +34,7 @@
 - [Day12] PyTorch 기본 4 ~ 5강 & 필수과제 Custom Dataset 과제
 - [Day13] PyTorch 기본 6 ~ 7강 & 시각화 3-1 ~ 3-2강 & 선택과제 Transfer Learning + Parameter Tuning
 - [Day14] PyTorch 기본 8 ~ 10강 & 시각화 3-3 ~ 3-4강
+
+---
+## P Stage
+- 4~5주차 강의 & 대회

@@ -1,4 +1,4 @@
-# [Day15] 이미지 분류 1~2강 & 시각화 4-1강
+# [Day15] 이미지 분류 1~2강 & 시각화 4-1~4-2강
 
 * Competiion with AI Stages에 대한 이해
   * Competition 이란?

@@ -41,4 +41,6 @@
 
 ### [[Week4] 이미지 분류 - 김태진 강사 & [Special] Data Viz - 안수빈 강사](https://github.com/raki-1203/boostcamp_note/tree/main/Week_4)
 
-- [Day15] 이미지 분류 - 김태진 강사 & [Special] Data Viz - 안수빈 강사
+- [Day15] 이미지 분류 1 ~ 2강 & 시각화 4-1 ~ 4-2강
+- [Day16] 이미지 분류 3 ~ 4강 & 시각화 4-3강
+

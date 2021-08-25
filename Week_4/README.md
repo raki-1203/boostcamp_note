@@ -15,6 +15,12 @@
 - Seaborn 심화
 - 마스크 착용 상태 분류 대회 - EDA & Dataset & DataLoader & Train
 
+### [[Day17] 이미지 분류 5 ~ 6강](https://github.com/raki-1203/boostcamp_note/tree/main/Week_4/Day_17)
+
+- Model 1
+- Model 2
+- 마스크 착용 상태 분류 대회 - EDA & Dataset & DataLoader & Train
+
 ### [Week4 피어세션 정리](https://github.com/raki-1203/Boostcamp_2st_Hot6/tree/main/Meetup-log/week4)
 
 ---
@@ -55,3 +61,23 @@ SMOTE 를 사용할지 생각 해봐야 겠다.
 오늘은 데이터 확인하는데 굉장히 많은 시간이 흐른 것 같다.
 
 데이터는 꽤 수정했다고 생각하고 이제 Dataset, DataLoader, Model 관련해서 더 집중해봐야 겠다.
+
+> [Day17]
+
+Image augmentation library 인 `albumentations` 를 사용해보려 구글링을 했다.
+
+[이 블로그](https://hoya012.github.io/blog/albumentation_tutorial/)를 보면서 사용법을 익혔다.
+
+`albumentations.pytorch.transforms.ToTensorV2` 이거 찾느라 고생했다. 하...
+
+데이터셋 만드는 과정에서 albumentations 를 사용하도록 코드 교체했다.
+
+더 빠르다고 하니 resource를 더 잘 쓸 수 있겠지?
+
+VIT 모델도 사용해보고 있다.
+
+확실히 배치사이즈를 줄여야 돌아가고 num_workers 도 줄여야 돌아간다.
+
+이렇게 모델만 바꾸지 말고 하이퍼파라미터 튜닝도 해야하나 싶다.
+
+다들 어떻게 저렇게 잘 하는지 신기하다.

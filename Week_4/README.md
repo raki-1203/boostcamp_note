@@ -6,20 +6,22 @@
 - Image Classification & EDA
 - Seaborn 소개
 - Seaborn 기초
-- 마스크 착용 상태 분류 대회 - EDA & Train
 
 ### [[Day16] 이미지 분류 3 ~ 4강 & 시각화 4-3강](https://github.com/raki-1203/boostcamp_note/tree/main/Week_4/Day_16)
 
 - Dataset
 - Data Generation
 - Seaborn 심화
-- 마스크 착용 상태 분류 대회 - EDA & Dataset & DataLoader & Train
 
 ### [[Day17] 이미지 분류 5 ~ 6강](https://github.com/raki-1203/boostcamp_note/tree/main/Week_4/Day_17)
 
 - Model 1
 - Model 2
-- 마스크 착용 상태 분류 대회 - EDA & Dataset & DataLoader & Train
+
+### [[Day18] 이미지 분류 7 ~ 8강](https://github.com/raki-1203/boostcamp_note/tree/main/Week_4/Day_18)
+
+- Training & Inference 1
+- Training & Inference 2
 
 ### [Week4 피어세션 정리](https://github.com/raki-1203/Boostcamp_2st_Hot6/tree/main/Meetup-log/week4)
 
@@ -91,3 +93,25 @@ VIT 모델도 사용해보고 있다.
 내가 모르는 방법이 있는 것 같은데 단순히 fine-tuning 으로는 한계가 있는 느낌이다.
 
 더 찾아봐야겠다.
+
+`early stopping` [[Colab](https://colab.research.google.com/github/sanchit2843/MLBasics/blob/master/IntelClassificationKaggle/Pytorch%20transfer%20learning%20tutorial%20%5B93%25acc%5D.ipynb#scrollTo=6bOxW-Epbi4E)] 참고할 클래스 생성 코드 찾았다.
+
+> [Day18]
+
+오늘은 tensorboard 를 해보려다가 서버에 접근이 불가한 것 같았다.
+
+어떻게 해야할지 잘 모르겠다.
+
+tqdm 으로 보고 있으니 별 상관은 없는데 배운거 써먹어보려 했는데 좀 어려운 것 같다.
+
+상민 캠퍼님의 조언으로 배치사이즈를 32로 줄여보았다.
+
+그랬더니 지금까지 모델 중 최고 성적이 나왔다.
+
+배치사이즈가 작으면 좋은건지는 한번 더 확인을 해봐야 겠지만
+
+성능이 올랐다는거는 너무 만족한다.
+
+멘토링 시간에 lr_schedule 이 중요하다고 하셔서 CosineAnnealingLR 을 사용해서 테스트 진행 하고 있다.
+
+벌써 10번의 제출을 다 해버려서 아쉽지만 내일 제출을 해봐야겠다.

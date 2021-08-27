@@ -23,6 +23,11 @@
 - Training & Inference 1
 - Training & Inference 2
 
+### [[Day19] 이미지 분류 9 ~ 10강](https://github.com/raki-1203/boostcamp_note/tree/main/Week_4/Day_19)
+
+- Ensemble
+- Experiment Toolkits & Tips
+
 ### [Week4 피어세션 정리](https://github.com/raki-1203/Boostcamp_2st_Hot6/tree/main/Meetup-log/week4)
 
 ---
@@ -115,3 +120,6 @@ tqdm 으로 보고 있으니 별 상관은 없는데 배운거 써먹어보려 �
 멘토링 시간에 lr_schedule 이 중요하다고 하셔서 CosineAnnealingLR 을 사용해서 테스트 진행 하고 있다.
 
 벌써 10번의 제출을 다 해버려서 아쉽지만 내일 제출을 해봐야겠다.
+
+> [Day19]
+

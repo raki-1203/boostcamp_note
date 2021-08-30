@@ -47,3 +47,4 @@
 - [Day18] 이미지 분류 7 ~ 8강
 - [Day19] 이미지 분류 9 ~ 10강
 
+### [[Week5] 이미지 분류 - 김태진 강사](https://github.com/raki-1203/boostcamp_note/tree/main/Week_5)

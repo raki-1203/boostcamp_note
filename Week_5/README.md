@@ -35,9 +35,7 @@ Optimizer 중 Adam, AdamW, MadGrad 를 이용해 3 epochs 씩 돌려서 비교�
 
 가장 빠르게 성능이 올라감을 발견!
 
-
-
-
+이번주 부터는 팀별로 하나의 프로젝트로 관리하고 각자 역할 분담해서 테스트 하기로 함
 
 피어세션을 통해서 역할 분담
 
@@ -51,4 +49,30 @@ Optimizer 중 Adam, AdamW, MadGrad 를 이용해 3 epochs 씩 돌려서 비교�
 5. Stratified K-Fold : 희락, 은우
     구현해보고, K수 조절해보기
 6. Mutually Exclusive : 상준, 별이
+
+> [Day_21]
+
+상민캠퍼님의 점수가 가장 높아서 그 코드를 기준으로 테스트 하기로 함
+
+[Hot6 깃허브](https://github.com/boostcampaitech2/image-classification-level1-06) 를 사용하여 코드 공유 후
+
+상민님이 적용한 방법을 정리해 보았다.
+
+1. facenet MTCNN 을 사용해 얼굴 인식 후 Crop
+2. Train 시 Cutmix 적용
+3. scheduler CyclicLR 사용
+4. Data 를 age 와 gender 기준으로 먼저 Train set 과 Valid set 으로 Split 하고 Mask 착용까지 사용해서 18개의 Class로 분류
+5. Resize [280, 210], ColorJitter(brightness=(0.2, 3)), ColorJitter(contrast=(0.2, 3)), 
+ColorJitter(saturation=(0.2, 3)), ColorJitter(hue=(-0.3, 0.3)), RandomHorizontalFlip()
+ToTensor(), Normalize() 적용
+6. 모델 EfficientNet_B4 사용
+
+이걸 기준으로 각자 맡은 역할 테스트 진행
+
+나는 모델을 테스트 하는 역할을 맡았다.
+
+ResNet18, ResNet50, ResNet101, Rexnet,
+EfficientNet_B4, EfficientNet_B3_prune, EfficientNet_B2_prune, EfficientNet_B1_prune 등을 테스트 해봤고
+
+이 중 EffientNet_B2_prune 의 F1_Score 기준 성능이 가장 좋게 나타났다.
 

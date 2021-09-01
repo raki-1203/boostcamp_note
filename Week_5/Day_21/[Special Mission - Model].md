@@ -11,15 +11,15 @@ Input Image 의 Shape 은 (3, 256, 256) 이라고 생각하고 진행하겠다.
 > 참고 Convolution layer 의 output size 계
 
 - 각각 기호를 아래와 같이 정의
-  - $O$: Size(width) of output image
-  - $I$: Size(width) of input image
-  - $K$: Size(width) of kernels used in the Conv layer
-  - $N$: Number of kernels
-  - $S$: Stride of the convolution operation
-  - $P$: Padding size
-- $O$(Size(width) of output image)는 다음과 같이 정의 됨
+  - <img src="https://render.githubusercontent.com/render/math?math=O">: Size(width) of output image
+  - <img src="https://render.githubusercontent.com/render/math?math=I">: Size(width) of input image
+  - <img src="https://render.githubusercontent.com/render/math?math=K">: Size(width) of kernels used in the Conv layer
+  - <img src="https://render.githubusercontent.com/render/math?math=N">: Number of kernels
+  - <img src="https://render.githubusercontent.com/render/math?math=S">: Stride of the convolution operation
+  - <img src="https://render.githubusercontent.com/render/math?math=P">: Padding size
+- <img src="https://render.githubusercontent.com/render/math?math=O">(Size(width) of output image)는 다음과 같이 정의 됨
 
-$$ O = \frac{I - K + 2P}{S} + 1 $$
+  <img src="https://render.githubusercontent.com/render/math?math=O = \frac{I - K + 2P}{S} + 1">
 
 - 출력 이미지의 채널 수는 커널의 갯수($N$) 와 같음
 

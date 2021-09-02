@@ -130,6 +130,6 @@ age, gender, mask 를 분리해서 예측한다고 하면 외부이미지도 추
 
 Tensorboard event 파일을 dataframe 으로 바꿔주는 코드를 알아냈다.
 
-jupyter 파일로 정리를 해놨다. 
+[jupyter 파일](https://github.com/raki-1203/boostcamp_note/blob/main/Week_5/Day_23/Tensorboard_Visualization.ipynb) 로 정리를 해놨다. 
 
 wrap-up report 또는 나중에 결과를 시각화할 때 사용하면 좋을 것 같다.

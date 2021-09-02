@@ -108,42 +108,28 @@ criterion focalloss 였다.
 
 성능은 최선을 다해 끌어 올린 것 같다.
 
-이제는 뭔가 해보고 싶은걸 해봐야겠다고 생각했다.
+오늘은 이렇게 저렇게 모델을 생성하고 결과가 잘 나온 애들 가지고 soft voting 을 적용하고 마지막 제출을 할 예정이다.
 
-그 중에 Model 자체에서 여러가지 pretrained model 을 불러와서 하나로 합쳐볼 생각이다.
+마지막에 age, gender, mask 를 따로 예측하는 모델을 팀원분이 같이 작업해주셨다.
 
-코드는 대충 이런식으로 짜봤다.
+이렇게 작업한 결과가 어떻게 나올지 궁금하다.
 
-```python
-class EnsembleModel(nn.Module):
-    def __init__(self, model_arch_list, num_classes):
-        super().__init__()
-        self.model_arch_list = model_arch_list
-        self.num_classes = num_classes
-        for i, model_arch in enumerate(model_arch_list, start=1):
-            globals()['model_{}'.format(i)] = timm.create_model(model_arch,
-                                                                    pretrained=True,
-                                                                    num_classes=num_classes)
-        self.num_models = len(model_arch_list)
-        self.classifier = nn.Linear(self.num_classes * self.num_models, self.num_classes)
+그리고 한가지 아쉬운 점은 너무 늦게 구현이 되서 age, gender, mask 에 전부 똑같은 input 이 들어갔다는 점이다.
 
-        """
-        1. 위와 같이 생성자의 parameter 에 num_claases 를 포함해주세요.
-        2. 나만의 모델 아키텍쳐를 디자인 해봅니다.
-        3. 모델의 output_dimension 은 num_classes 로 설정해주세요.
-        """
+우리조의 경우 facenet 을 사용해서 얼굴을 crop 하고 이미지를 수정해서 input 으로 사용했는데
 
-    def forward(self, x):
-        for i in range(self.num_models):
-            globals()['out_{}'.format(i + 1)] = globals()['model_{}'.format(i + 1)](x)
+age, gender 의 경우 옷 부분이 필요할 수도 있겠다는 생각이 들었다.
 
-        out = torch.cat([globals()['out_{}'.format(i + 1)] for i in range(self.num_models)], axis=1)
-        out = self.classifier(out)
-        """
-        1. 위에서 정의한 모델 아키텍쳐를 forward propagation 을 진행해주세요
-        2. 결과로 나온 output 을 return 해주세요
-        """
-        return out
-```
+시간이 더 있었더라면 데이터를 나눠서 학습을 시켜봤으면 결과가 어떻게 나왔을지 실험을 해보고 싶다.
 
-성능에 얼마나 영향을 미칠지는 돌려봐야 알 것 같다.
+그리고 하나더 아쉬운점이 있다면 autoML 을 사용해보지 못했다는 것이다.
+
+다음 P-Stage 에서나 다른 기회가 생겼을 때 무조건 autoML 을 사용해봐야겠다.
+
+age, gender, mask 를 분리해서 예측한다고 하면 외부이미지도 추가해서 사용했을수도 있을 것 같은데 아쉽다.
+
+Tensorboard event 파일을 dataframe 으로 바꿔주는 코드를 알아냈다.
+
+jupyter 파일로 정리를 해놨다. 
+
+wrap-up report 또는 나중에 결과를 시각화할 때 사용하면 좋을 것 같다.

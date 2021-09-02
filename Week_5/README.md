@@ -1,5 +1,13 @@
 # [Week5] 이미지 분류 - 김태진 강사
 
+### [[Day21] 8/25일자 Special Mission](https://github.com/raki-1203/boostcamp_note/tree/main/Week_5/Day_21)
+
+- Darknet-53 모델 PyTorch 로 구현하기
+
+### [[Day22] train data set 에서 잘 못 labeling 된 데이터 수정한 csv 파일 만들기](https://github.com/raki-1203/boostcamp_note/tree/main/Week_5/Day_22)
+
+- LabelCorrection_raki.ipynb
+
 ### [Week5 피어세션 정리](https://github.com/raki-1203/Boostcamp_2st_Hot6/tree/main/Meetup-log/week5)
 
 ---
@@ -76,3 +84,66 @@ EfficientNet_B4, EfficientNet_B3_prune, EfficientNet_B2_prune, EfficientNet_B1_p
 
 이 중 EffientNet_B2_prune 의 F1_Score 기준 성능이 가장 좋게 나타났다.
 
+> [Day_22]
+
+parser.argument 의 인자를 nargs 를 받을 수 있는데 정규표현식을 사용해서 몇개를 받을 수 있을지 정할 수 있는 것 같다.
+
+nargs='+' 하면 --resize param1 param2 param3 몇개의 인자든 받을 수 있게 된다.
+
+오늘은 팀원들과 어제 각자 했던 테스트를 마치고 가장 성능이 좋았다고 여겨지는 criterion, model, scheduler 등을 모았다.
+
+이 때 사용된 적용 기준은 cutmix 0.8, CyclicLR base_lr 1e-5, args_lr 1e-3, model efficientnet_b4, optimizer MADGRAD,
+criterion focalloss 였다.
+
+이렇게 모인 하이퍼파라미터에 Stratified K-Fold 를 사용해 5번의 학습을 진행해서 평균적인 valid_f1_score 를 구했다.
+
+이렇게 구해진 5개의 모델의 test set 에 대한 예측값을 soft voting 해서 결과를 제출해보니 리더보드에서 상당히 높은 위치까지 도달했다.
+
+각자 좋았던 부분을 git 을 통해 합치고 다시 각자 나눠서 테스트를 진행하니 확실히 혼자할 때보다 더 좋은 영향력을 얻는 듯 하다.
+
+
+> [Day_23]
+ 
+오늘은 대회 마지막 날이다.
+
+성능은 최선을 다해 끌어 올린 것 같다.
+
+이제는 뭔가 해보고 싶은걸 해봐야겠다고 생각했다.
+
+그 중에 Model 자체에서 여러가지 pretrained model 을 불러와서 하나로 합쳐볼 생각이다.
+
+코드는 대충 이런식으로 짜봤다.
+
+```python
+class EnsembleModel(nn.Module):
+    def __init__(self, model_arch_list, num_classes):
+        super().__init__()
+        self.model_arch_list = model_arch_list
+        self.num_classes = num_classes
+        for i, model_arch in enumerate(model_arch_list, start=1):
+            globals()['model_{}'.format(i)] = timm.create_model(model_arch,
+                                                                    pretrained=True,
+                                                                    num_classes=num_classes)
+        self.num_models = len(model_arch_list)
+        self.classifier = nn.Linear(self.num_classes * self.num_models, self.num_classes)
+
+        """
+        1. 위와 같이 생성자의 parameter 에 num_claases 를 포함해주세요.
+        2. 나만의 모델 아키텍쳐를 디자인 해봅니다.
+        3. 모델의 output_dimension 은 num_classes 로 설정해주세요.
+        """
+
+    def forward(self, x):
+        for i in range(self.num_models):
+            globals()['out_{}'.format(i + 1)] = globals()['model_{}'.format(i + 1)](x)
+
+        out = torch.cat([globals()['out_{}'.format(i + 1)] for i in range(self.num_models)], axis=1)
+        out = self.classifier(out)
+        """
+        1. 위에서 정의한 모델 아키텍쳐를 forward propagation 을 진행해주세요
+        2. 결과로 나온 output 을 return 해주세요
+        """
+        return out
+```
+
+성능에 얼마나 영향을 미칠지는 돌려봐야 알 것 같다.

@@ -26,7 +26,7 @@
     Normalize(mean=mean, std=std),
     ```
  
-  - valid & train set 적용
+  - valid & test set 적용
     ```python
     Resize(resize, Image.BILINEAR),
     ToTensor(),

@@ -95,6 +95,9 @@ curl command not found 시 아래 명령어 실행해줍니다.
 	libmecab.so.2 (libc6,x86-64) => /usr/local/lib/libmecab.so.2
 	libmecab.so (libc6,x86-64) => /usr/local/lib/libmecab.so
 ```
+저는 마지막 명령어 쳤을 때 아무것도 나오지 않아서 뒤에서 에러가 났는데요
+
+계속 진행하시다 보면 저부분도 해결하는 방법이 나옵니다.
 
 ## 5. mecab-ko 설치
 

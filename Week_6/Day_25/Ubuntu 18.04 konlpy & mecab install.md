@@ -131,6 +131,16 @@ mecab-ko-dic-2.1.1-20180720 경로로 이동하여 아래 명령을 수행합니
 > sudo make install
 ```
 
+```
+Looking in current directory for macros.
+./autogen.sh: 11: ./autogen.sh: aclocal: not found
+./autogen.sh: 14: ./autogen.sh: autoconf: not found
+./autogen.sh: 15: ./autogen.sh: automake: not found
+```
+이 에러가 나는 경우 아래 명령어 실행해줍니다.
+
+`apt install automake libtool -y`
+
 만약 이 명령을 수행하는 도중 작업이 진행되지 않고 에러가 나온다면!!
 
 libmecab.so.2가 있는지 확인하기

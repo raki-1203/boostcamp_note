@@ -3,6 +3,7 @@
 ## Abstract
 - Ustage
   - 2021.08.02 ~ 2021.08.20
+  - 2021.09.06 ~ 2021.09.24
 - Pstage
   - 2021.08.23 ~ 2021.09.03
 
@@ -54,3 +55,10 @@
 - [Day22] 이미지 분류 대회
 - [Day23] 이미지 분류 대회
 - [Day24] 이미지 분류 대회 Wrap Up Report 작성
+
+## U Stage
+- 6~8주차 강의
+
+### [[Week6] NLP - 주재걸 교수님 & [Special] Data Viz - 안수빈 강사](https://github.com/raki-1203/boostcamp_note/tree/main/Week_6)
+
+- [Day25] NLP 1 ~ 2강 & 시각화 5-1 ~ 5-2강

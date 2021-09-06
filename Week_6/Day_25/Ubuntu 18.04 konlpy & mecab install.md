@@ -92,8 +92,8 @@ curl command not found 시 아래 명령어 실행해줍니다.
 > cd /tmp/mecab-ko-dic-2.1.1-20180720
 > ldconfig
 > ldconfig -p | grep /usr/local/lib
-	libmecab.so.2 (libc6,x86-64) => /usr/local/lib/libmecab.so.2
-	libmecab.so (libc6,x86-64) => /usr/local/lib/libmecab.so
+libmecab.so.2 (libc6,x86-64) => /usr/local/lib/libmecab.so.2
+libmecab.so (libc6,x86-64) => /usr/local/lib/libmecab.so
 ```
 저는 마지막 명령어 쳤을 때 아무것도 나오지 않아서 뒤에서 에러가 났는데요
 

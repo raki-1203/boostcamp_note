@@ -82,6 +82,10 @@ NameError: name 'Tagger' is not defined
 > tar -zxvf mecab-ko-dic-2.1.1-20180720.tar.gz
 ```
 
+curl command not found 시 아래 명령어 실행해줍니다.
+
+`> apt install curl` 
+
 다음은 mecab-ko-dic-2.1.1-20180720 경로로 이동하여 아래 명령을 실행합니다.
 
 ```

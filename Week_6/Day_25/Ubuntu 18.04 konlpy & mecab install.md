@@ -163,3 +163,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 이러면 끝!
 
 잘쓰세요!
+
+reference https://yuddomack.tistory.com/entry/%EC%B2%98%EC%9D%8C%EB%B6%80%ED%84%B0-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-EC2-konlpy-mecab-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0ubuntu
+
+여기를 참고해서 작성했습니다.

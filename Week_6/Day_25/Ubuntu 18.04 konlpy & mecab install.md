@@ -89,8 +89,8 @@ curl command not found 시 아래 명령어 실행해줍니다.
 다음은 mecab-ko-dic-2.1.1-20180720 경로로 이동하여 아래 명령을 실행합니다.
 
 ```
-> /tmp/mecab-ko-dic-2.1.1-20180720
-> sudo ldconfig
+> cd /tmp/mecab-ko-dic-2.1.1-20180720
+> ldconfig
 > ldconfig -p | grep /usr/local/lib
 	libmecab.so.2 (libc6,x86-64) => /usr/local/lib/libmecab.so.2
 	libmecab.so (libc6,x86-64) => /usr/local/lib/libmecab.so

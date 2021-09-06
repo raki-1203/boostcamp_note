@@ -111,7 +111,11 @@ libmecab.so (libc6,x86-64) => /usr/local/lib/libmecab.so
 > sudo make install
 ```
 
-이 때, make 명령어 실행이 안되는 경우 아래 명령어 실행하면 돌아
+configure: error: Your compiler is not powerful enough to compile MeCab. 에러 메시지가 뜨면 명령어 실행해줍니다.
+
+`apt install g++` 
+
+이 때, make 명령어 실행이 안되는 경우 아래 명령어 실행하면 돌아갑니다.
 
 `apt-get install build-essential`
 

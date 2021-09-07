@@ -82,15 +82,22 @@ NameError: name 'Tagger' is not defined
 > tar -zxvf mecab-ko-dic-2.1.1-20180720.tar.gz
 ```
 
+curl command not found 시 아래 명령어 실행해줍니다.
+
+`> apt install curl` 
+
 다음은 mecab-ko-dic-2.1.1-20180720 경로로 이동하여 아래 명령을 실행합니다.
 
 ```
-> /tmp/mecab-ko-dic-2.1.1-20180720
-> sudo ldconfig
+> cd /tmp/mecab-ko-dic-2.1.1-20180720
+> ldconfig
 > ldconfig -p | grep /usr/local/lib
-	libmecab.so.2 (libc6,x86-64) => /usr/local/lib/libmecab.so.2
-	libmecab.so (libc6,x86-64) => /usr/local/lib/libmecab.so
+libmecab.so.2 (libc6,x86-64) => /usr/local/lib/libmecab.so.2
+libmecab.so (libc6,x86-64) => /usr/local/lib/libmecab.so
 ```
+저는 마지막 명령어 쳤을 때 아무것도 나오지 않아서 뒤에서 에러가 났는데요
+
+계속 진행하시다 보면 저부분도 해결하는 방법이 나옵니다.
 
 ## 5. mecab-ko 설치
 
@@ -104,7 +111,11 @@ NameError: name 'Tagger' is not defined
 > sudo make install
 ```
 
-이 때, make 명령어 실행이 안되는 경우 아래 명령어 실행하면 돌아
+configure: error: Your compiler is not powerful enough to compile MeCab. 에러 메시지가 뜨면 명령어 실행해줍니다.
+
+`apt install g++` 
+
+이 때, make 명령어 실행이 안되는 경우 아래 명령어 실행하면 돌아갑니다.
 
 `apt-get install build-essential`
 
@@ -119,6 +130,16 @@ mecab-ko-dic-2.1.1-20180720 경로로 이동하여 아래 명령을 수행합니
 > make
 > sudo make install
 ```
+
+```
+Looking in current directory for macros.
+./autogen.sh: 11: ./autogen.sh: aclocal: not found
+./autogen.sh: 14: ./autogen.sh: autoconf: not found
+./autogen.sh: 15: ./autogen.sh: automake: not found
+```
+이 에러가 나는 경우 아래 명령어 실행해줍니다.
+
+`apt install automake libtool -y`
 
 만약 이 명령을 수행하는 도중 작업이 진행되지 않고 에러가 나온다면!!
 

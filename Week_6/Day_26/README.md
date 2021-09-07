@@ -1,22 +1,16 @@
-# [Day25] NLP 3 ~ 4강 & 시각화 5-3 ~ 6-1강
+# [Day26] NLP 3 ~ 4강 & 시각화 5-3 ~ 6-1강
 
 * Recurrent Neural Network and Language Modeling에 대한 이해
-  * Academic Disciplines related to NLP
-  * Text mining
-  * Information retrieval
-  * Trends of NLP
-  * Bag-of-Words
-  * NaiveBayes Classifier for Document Classification
+  * Basic of Recurrent Neural Networks (RNNs)
+  * Types of RNN
+  * Character-level Language Model
   
-* Word Embedding에 대한 이해
-  * What is Word Embedding?
-  * Word2Vec
-    * Idea of Word2Vec
-    * How Word2Vec Algorithm Works
-    * Property of Word2Vec
-  * GloVe
-    * Property of GloVe
+* LSTM and GRU에 대한 이해
+  * Long Short-Term Memory (LSTM)
+  * Gated Recurrent Unit (GRU)
+  * Backpropagation in LSTM? GRU?
+  * Summary or RNN/LSTM/GRU
+    
+* 다양한 시각화 라이브러리
 
-* Polar Coordinate
-
-* Pie Chart
+* Interactive Visualization

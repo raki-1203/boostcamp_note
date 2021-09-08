@@ -62,3 +62,4 @@
 ### [[Week6] NLP - 주재걸 교수님 & [Special] Data Viz - 안수빈 강사](https://github.com/raki-1203/boostcamp_note/tree/main/Week_6)
 
 - [Day25] NLP 1 ~ 2강 & 시각화 5-1 ~ 5-2강
+- 

@@ -23,4 +23,4 @@
     
 * Interactive Visualization 실습
 
-* Interactive Visualization
+* Custom Matplotlib Theme

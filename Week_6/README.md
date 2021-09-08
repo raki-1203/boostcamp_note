@@ -14,12 +14,12 @@
 - 다양한 시각화 라이브러리
 - Interactive Visualization
 
-### [[Day26] NLP 3 ~ 4강 & 시각화 5-3 ~ 6-1강](https://github.com/raki-1203/boostcamp_note/tree/main/Week_6/Day_26)
+### [[Day27] NLP 5 ~ 6강 & 시각화 6-2 ~ 7-1강](https://github.com/raki-1203/boostcamp_note/tree/main/Week_6/Day_27)
 
-- Recurrent Neural Network and Language Modeling
-- LSTM and GRU
-- 다양한 시각화 라이브러리
-- Interactive Visualization
+- Sequence to Sequence with Attention
+- Beam Search and BLEU score
+- Interactive Visualization 실습
+- Custom Matplotlib Theme
 
 ### [Week6 피어세션 정리](https://www.notion.so/8b197c1430ad4dc2a46c6aace02aac8e?v=864474662fa4412297f6319ae1d3c171)
 
